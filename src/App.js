@@ -124,9 +124,9 @@ class App extends Component{
             <button className="btn btn-primary mx-auto" onClick={this.turnOnMusic}>Play Music</button>
           </div> : (!this.state.isShowBirthday) ? <div className="navbar fixed-bottom pb-5 navbar-fade">
             <button className="btn btn-primary mx-auto" onClick={this.showBirthday}>Click Here</button>
-          </div> : <div className="navbar fixed-bottom pb-5 navbar-fade">
+          </div> : (!this.state.isShowMessage) ? <div className="navbar fixed-bottom pb-5 navbar-fade">
             <button className="btn btn-primary mx-auto" onClick={this.showMessage}>A message for you</button>
-          </div>
+          </div> : null
           }
           {this.state.isShowMessage ? 
           <div className="sp-container">
@@ -149,7 +149,7 @@ class App extends Component{
     <p className="frame-16">Now things are different...</p>
     <p className="frame-17">real story of your life is just about to begin</p>
     <p className="frame-18">indeed..</p>
-    <p className="frame-19">but don't worry everything's gonna be go good for you</p>
+    <p className="frame-19">but don't worry everything's gonna go good for you</p>
     <p className="frame-20">and I hope you'll find happiness along the way</p>
     <p className="frame-21">keep your spirit up</p>
     <p className="frame-22">enjoy every single moment that you experience today</p>
